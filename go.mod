@@ -1,4 +1,4 @@
-module github.com/eduardosz98/postgres-app
+module github.com/eduardosz98/gorest-fullapp
 
 go 1.12
 
