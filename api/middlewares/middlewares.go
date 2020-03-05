@@ -4,8 +4,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/eduardosz98/postgres-app/api/auth"
-	"github.com/eduardosz98/postgres-app/api/responses"
+	"github.com/eduardosz98/gorest-fullapp/api/auth"
+	"github.com/eduardosz98/gorest-fullapp/api/responses"
 )
 
 func SetMiddlewareJSON(next http.HandlerFunc) http.HandlerFunc {

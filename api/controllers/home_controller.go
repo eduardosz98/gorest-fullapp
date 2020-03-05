@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/eduardosz98/postgres-app/api/responses"
+	"github.com/eduardosz98/gorest-fullapp/api/responses"
 )
 
 func (server *Server) Home(w http.ResponseWriter, r *http.Request) {

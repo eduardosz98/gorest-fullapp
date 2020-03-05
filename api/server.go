@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/eduardosz98/postgres-app/api/controllers"
-	"github.com/eduardosz98/postgres-app/api/seed"
+	"github.com/eduardosz98/gorest-fullapp/api/controllers"
+	"github.com/eduardosz98/gorest-fullapp/api/seed"
 	"github.com/joho/godotenv"
 )
 

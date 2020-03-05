@@ -3,7 +3,7 @@ package seed
 import (
 	"log"
 
-	"github.com/eduardosz98/postgres-app/api/models"
+	"github.com/eduardosz98/gorest-fullapp/api/models"
 	"github.com/jinzhu/gorm"
 )
 

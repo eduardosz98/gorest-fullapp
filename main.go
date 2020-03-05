@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/eduardosz98/postgres-app/api"
+	"github.com/eduardosz98/gorest-fullapp/api"
 )
 
 func main() {

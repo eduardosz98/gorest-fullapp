@@ -1,6 +1,6 @@
 package controllers
 
-import "github.com/eduardosz98/postgres-app/api/middlewares"
+import "github.com/eduardosz98/gorest-fullapp/api/middlewares"
 
 func (s *Server) initializeRoutes() {
 

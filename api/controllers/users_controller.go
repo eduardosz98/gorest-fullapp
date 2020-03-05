@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/eduardosz98/postgres-app/api/auth"
-	"github.com/eduardosz98/postgres-app/api/models"
-	"github.com/eduardosz98/postgres-app/api/responses"
-	"github.com/eduardosz98/postgres-app/api/utils/formaterror"
+	"github.com/eduardosz98/gorest-fullapp/api/auth"
+	"github.com/eduardosz98/gorest-fullapp/api/models"
+	"github.com/eduardosz98/gorest-fullapp/api/responses"
+	"github.com/eduardosz98/gorest-fullapp/api/utils/formaterror"
 	"github.com/gorilla/mux"
 )
 
