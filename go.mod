@@ -1,6 +1,6 @@
 module github.com/eduardosz98/gorest-fullapp
 
-go 1.12
+go 1.14
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.3.3

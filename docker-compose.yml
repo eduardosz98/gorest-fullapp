@@ -13,7 +13,7 @@ services:
       # - fullstack-mysql           # Uncomment this when using mysql.
     networks:
       db_network:
-        ipv4_address: 172.27.1.3
+        ipv4_address: 100.0.0.13
 
   fullstack-postgres:
     image: postgres:latest
@@ -29,7 +29,7 @@ services:
       - database_postgres:/var/lib/postgresql/data
     networks:
       db_network:
-        ipv4_address: 172.27.1.1
+        ipv4_address: 100.0.0.11
     
   pgadmin:
     image: dpage/pgadmin4
@@ -45,7 +45,7 @@ services:
       - pgadmin_settings:/var/lib/pgadmin
     networks:
       db_network:
-        ipv4_address: 172.27.1.2
+        ipv4_address: 100.0.0.12
     restart: unless-stopped
 
   
@@ -90,10 +90,8 @@ volumes:
 
 # Networks to be created to facilitate communication between containers
 networks:
-  # fullstack:
-  #   driver: bridge
   db_network:
     ipam:
         driver: default
         config:
-            - subnet: 172.27.0.0/16
+            - subnet: 100.0.0.0/16
