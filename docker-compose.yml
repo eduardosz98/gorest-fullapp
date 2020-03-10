@@ -1,10 +1,10 @@
-version: '3'
+version: '3.2'
 services:
   app:
     container_name: full_app
     build: .
     ports: 
-      - 8080:8080 
+      - '8080:8080'
     restart: on-failure
     volumes:
       - api:/usr/src/app/
@@ -46,9 +46,17 @@ services:
     networks:
       db_network:
         ipv4_address: 100.0.0.12
-    restart: unless-stopped
 
-  
+  # load-balancer:
+  #   build: ./load-balancer   
+  #   ports:
+  #       - '8081:8081'
+  #   links: 
+  #     - app
+  #   networks:
+  #     db_network:
+  #       ipv4_address: 100.0.0.14
+
   # fullstack-mysql:
   #   image: mysql:5.7
   #   container_name: full_db_mysql
@@ -87,7 +95,7 @@ volumes:
   database_postgres:                  # Uncomment this when using postgres.
   # database_mysql:                   # Uncomment this when using mysql.
   pgadmin_settings:
-
+    
 # Networks to be created to facilitate communication between containers
 networks:
   db_network:
